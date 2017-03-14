@@ -15,9 +15,9 @@
 </div> <!-- wrapper -->
 <div id="footer">
 <ul>
-<li class="noleftborder"><a href="http://www.namzuglenoil.com" target="_blank"><img src="<?php bloginfo('url'); ?>/wordpress/wp-content/themes/twentyten/images/footerblinker.gif"></a>Underwater Peoples Records</li>
+<li class="noleftborder"><a href="http://www.lionellswebsite.com" target="_blank"><img src="<?php bloginfo('url'); ?>/wordpress/wp-content/themes/twentyten/images/footerblinker.gif"></a>Underwater Peoples Records</li>
 <li>19 Hadrian Drive - Livingston, NJ 07039</li>
-<li class="norightborder">underwaterpeoples@gmail.com</li>
+<li class="norightborder">info@underwaterpeoples.com</li>
 </ul>
 </div>
 </body>

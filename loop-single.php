@@ -33,7 +33,6 @@
 
 <?php endwhile; // end of the loop. ?>
 </div>
-<?php comments_template( '', true ); ?>
 </div>
 <div id="articlesidebar">
 
@@ -60,4 +59,6 @@
 <?php get_footer(); ?>
  <STYLE type="text/css">
    #primary {display:inherit !important;}
+   #article{ margin-bottom:10px !important;
+   }
  </STYLE>

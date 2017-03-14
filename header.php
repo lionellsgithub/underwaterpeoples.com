@@ -45,24 +45,46 @@
 	 */
 	wp_head();
 ?>
-			<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
-		<script type="text/javascript" src="<?php bloginfo('url'); ?>/wordpress/wp-content/themes/twentyten/js/jquery.simplemodal-1.4.1.js"></script>
-				<script type="text/javascript" src="<?php bloginfo('url'); ?>/wordpress/wp-content/themes/twentyten/js/script.js"></script>
-
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<!--<script type="text/javascript" src="<?php bloginfo('url'); ?>/wordpress/wp-content/themes/twentyten/js/jquery.simplemodal-1.4.1.js"></script>-->
+<script type="text/javascript" src="<?php bloginfo('url'); ?>/wordpress/wp-content/themes/twentyten/js/script.js"></script>
 </head>
 
 <body>
+<div id="menumobile">
+	<p>MENU</p>
+	<ul>
+		<li><a href="<?php bloginfo('url'); ?>">HOME
+		</a></li>
+
+		<li><a href="<?php bloginfo('url'); ?>?page_id=884">ABOUT
+		</a></li>
+
+		<li><a href="<?php bloginfo('url'); ?>?page_id=574">ARTISTS
+		</a></li>
+
+		<li><a href="<?php bloginfo('url'); ?>?page_id=576">STORE
+		</a></li>
+
+		<li><a href="<?php bloginfo('url'); ?>/wordpress/cart" style="text-decoration: underline;">CART</a></li>
+		</ul>
+</div>
+
 <div id="wrapper">
+
 <div id="logo">
 <img src="<?php bloginfo('url'); ?>/wordpress/wp-content/themes/twentyten/images/up.png">
-<div id="logop"><a href="<?php bloginfo('url'); ?>/wordpress/cart">view cart</a>
+<div id="logop"><a href="<?php bloginfo('url'); ?>/wordpress/cart">View Cart</a>
 <br/><?php echo wpusc_cart_item_qty(); ?><br/></div>
 </div>
 <div id="up">UNDERWATER PEOPLES RECORDS</div>
 
-			<div id="navigation">
 
-				<ul>
+<div id="navigation">
+
+<ul>
 <li><a href="<?php bloginfo('url'); ?>">HOME
 </a></li>
 
@@ -78,13 +100,13 @@
 <!--
 <li><a href="<?php bloginfo('url'); ?>?p=287">BLOG
 </a></li>
--->
 
 <li><a href="<?php bloginfo('url'); ?>?page_id=578">VIDEOS
 </a></li>			
 
-<li><a href="<?php bloginfo('url'); ?>?post_type=tribe_events&tribe_events_cat=calendar&eventDisplay=month">SHOWS
+<li><a href="<?php bloginfo('url'); ?>/shows">SHOWS
 </a></li>
+-->
 
 <li><a href="http://underwaterpeoples.us1.list-manage.com/subscribe?u=c426ecca989fbcd7a8f2e9283&id=4daad34cf1" target="_blank">NEWSLETTER
 </a></li>	

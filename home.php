@@ -13,6 +13,26 @@
  */
 
 get_header(); ?>
+<script async src="//"></script>
+<!-- 1 -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2236034963906338"
+     data-ad-slot="5334557603"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+<script async src="//"></script>
+<!-- 2? -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-2236034963906338"
+     data-ad-slot="3845014404"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
 
 <div id="menu2">
 <?php query_posts( array(
@@ -41,7 +61,8 @@ get_header(); ?>
 ?>
 
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-			<a href="<?php the_permalink(); ?>"><h1><?php the_date(); ?></h1>
+			<h1><?php the_date(); ?></h1>
+			<a href="<?php the_permalink(); ?>">
 			<h2><?php the_title(); ?></h2>
 <?php the_post_thumbnail('large');?>
 			</a>
@@ -76,7 +97,7 @@ $wp_query->query('offset='.$myOffset.'&showposts=5'.'&paged='.$paged);
  ));
 ?>
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-			<a href="<?php the_permalink(); ?>"><h1><?php the_date(); ?></h1></a>
+			<h1><?php the_date(); ?></h1>
 			<a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a>
 			
 			
@@ -95,8 +116,36 @@ $wp_query->query('offset='.$myOffset.'&showposts=5'.'&paged='.$paged);
 
 <div id="homerightbox">
 
-<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2335010&amp;auto_play=false&amp;show_artwork=false&amp;color=66cccc"></iframe>
-<?php get_sidebar();?>
+<iframe width="100%" height="450" scrolling="no" frameborder="no" src="http://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Fplaylists%2F2335010&amp;auto_play=false&amp;show_artwork=false&amp;color=E24A4A"></iframe>
+
+<div id="news">
+      <h1>NEWS</h1>
+      <?php query_posts( array(
+      'posts_per_page' => 6,
+      'category_name' => News,
+ ));
+?>
+
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+			<?php the_content(); ?>
+						
+<?php endwhile; 
+?>
+</div>
+<!--<div id="news">
+      <h1>SHOWS</h1>
+      <?php query_posts( array(
+      'posts_per_page' => 6,
+      'category_name' => Shows,
+ ));
+?>
+<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
+			<li><?php the_content(); ?></li>
+						
+<?php endwhile; 
+?>
+</div>
+-->
 
 			<a href="<?php bloginfo('url'); ?>?page_id=576">
 			<div id="albums">
